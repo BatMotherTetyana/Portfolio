@@ -1,0 +1,29 @@
+table {
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+
+      th {
+        background-color: #675aaa;
+        color: white;
+      }
+
+      tbody td {
+        background-color: #d0c7f4;
+      }
+
+      tfoot td {
+        background-color: #5c4ea4;
+        color: white;
+        text-align: center;
+      }
+	  
+
+	table, th, td {
+    border: 1px solid black;
+	}
+

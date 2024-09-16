@@ -1,0 +1,11 @@
+body {
+    background-color: #675aaa;
+    color: #2e226b;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

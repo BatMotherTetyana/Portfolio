@@ -1,0 +1,27 @@
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      ul li {
+        margin: 10px 0;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      ul li:before {
+        content: "★";
+        position: absolute;
+        left: 750px;
+        color: gold;
+      }
+
+      a {
+        text-decoration: none;
+        color: #2e226b;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
