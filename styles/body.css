@@ -1,0 +1,276 @@
+/* Общие стили для сайта */
+body {
+    background-color: #675aaa;
+    color: #2e226b;
+    font-family: 'Press Start 2P';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #5c4ea4;
+    color: #FFE6FF;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header a {
+    color: #FFE6FF;
+    text-decoration: none;
+    font-weight: bold;
+	padding: 15px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    background-color: #d0c7f4;
+    padding: 15px;
+    border: 2px solid #5c4ea4;
+    border-radius: 8px;
+    margin: 20px;
+    width: 80%;
+}
+#animated-background {
+    position: fixed; /* Закрепляет канвас на фоне */
+    top: 0; /* Позиционирует на самом верху */
+    left: 0; /* Позиционирует на самом левом краю */
+    width: 100%; /* Ширина на весь экран */
+    height: 100%; /* Высота на весь экран */
+    z-index: -1; /* Обеспечивает, чтобы канвас не перекрывал остальной контент */
+}
+
+/* Пример вашего общего стиля */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/imggg.jpg');; /* Затемнение и картинка */
+    background-size: cover; /* Масштабируем картинку */
+    background-position: center; /* Центруем картинку */
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #5c4ea4;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    color: #FFE6FF; /* Цвет текста, чтобы его было видно */
+}
+
+
+#banner img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #2e226b;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #d0c7f4;
+    border: 1px solid #675aaa;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #5c4ea4;
+    color: #FFE6FF;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #2e226b;
+    text-align: left;
+}
+
+th {
+    background-color: #5c4ea4;
+    color: white;
+}
+
+tfoot td {
+    background-color: #d0c7f4;
+    color: #2e226b;
+    text-align: center;
+}
+aside#bannerr {
+    background-color: #d0c7f4;
+    padding: 15px;
+    border: 2px solid #5c4ea4;
+    border-radius: 8px;
+    margin: 20px;
+    width: 80%;
+    display: flex; /* Flexbox для равномерного распределения */
+    flex-wrap: wrap; /* Позволяем изображениям переноситься на следующую строку */
+    justify-content: center; /* Центрируем элементы */
+    gap: 5%; /* Расстояние между изображениями */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+aside#bannerr a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(20% - 10px); /* Каждое изображение занимает 20% ширины контейнера, минус расстояние */
+    min-width: 1px; /* Минимальная ширина, чтобы элементы не становились слишком маленькими */
+    max-width: 100px; /* Устанавливаем максимальную ширину */
+    aspect-ratio: 1; /* Сохраняем квадратные пропорции */
+}
+
+aside#bannerr a img {
+    width: 100%; /* Занимает всю ширину родителя */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 30%; /* Закругленные края */
+    object-fit: cover; /* Контент внутри вписывается в квадрат */
+}
+aside#bannerr a img:hover {
+	transform: scale(1.1); /* Увеличение до 110% */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень при наведении */
+}
+/* Основной стиль */
+#news {
+    padding: 20px;
+    margin: 0 auto; /* Центрирование по горизонтали */
+    width: 65%; /* Ограничение ширины */
+    border-radius: 8px; /* Закругленные края */
+
+}
+
+article {
+    border: 1px solid #5c4ea4;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Прячем текст, который будет разворачиваться */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Плавная анимация подсветки */
+}
+
+article h2 {
+    background-color: #d0c7f4;
+    color: #2e226b;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer; /* Указываем, что элемент кликабельный */
+	text-decoration: underline;
+}
+
+article:hover {
+	transform: scale(101%);
+    background-color: #d0c7f4; /* Подсветка при наведении */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+.content {
+    max-height: 0; /* Скрытие контента */
+    padding: 0 15px;
+    overflow: hidden; /* Убираем "выходящий" текст */
+    transition: max-height 0.3s ease; /* Анимация разворачивания */
+	text-align: center;
+	color: #5c4ea4;
+}
+
+article.expanded .content {
+    max-height: 10090px; /* Указываем максимальный размер, который нужно развернуть */
+}
+
+.image-container {
+    display: flex; /* Используем Flexbox для центрирования */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    width: 100%; /* Контейнер занимает всю ширину страницы */
+    height: 200px; /* Фиксированная высота контейнера */
+    overflow: hidden; /* Скрываем выходящие части картинки */
+    position: relative; /* Позиционирование для обрезки */
+	
+}
+
+.image-container img {
+    width: 100%; /* Адаптивная ширина */
+    height: 100%; /* Автоматический расчет высоты для сохранения пропорций */
+    object-fit: cover; /* Обрезка картинки, сохраняя пропорции */
+}
+.p img{
+	border-radius: 10%;
+}
+.slider {
+  position: relative;
+  width: 80%; /* Ширина слайдера */
+  max-width: 600px;
+  margin: 0 auto; /* Центрируем слайдер */
+  overflow: hidden; /* Прячем лишние части изображений */
+  border: 2px solid #5c4ea4;
+  border-radius: 10px;
+}
+
+.slider-wrapper {
+  display: flex; /* Ставим изображения в строку */
+  transition: transform 0.5s ease-in-out; /* Анимация листания */
+  will-change: transform;
+}
+
+.slider-wrapper img {
+  width: 100%; /* Изображения растягиваются на ширину контейнера */
+  flex-shrink: 0; /* Не уменьшаем изображения */
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 10; /* Кнопки над изображениями */
+}
+
+button.prev {
+  left: 10px; /* Расположение кнопки "влево" */
+}
+
+button.next {
+  right: 10px; /* Расположение кнопки "вправо" */
+}
+
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none; /* Запрещаем клики, если кнопка отключена */
+}
