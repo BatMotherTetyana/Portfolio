@@ -3,156 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Semantically Styled Website</title>
+    <meta name="description" content="The portfolio of Limbo Patriarch is an artist who creates furry, pony, anthro and monster art. Learn more about services, styles, pricing and fees.">
+    <meta name="keywords" content="Limbo Patriarch, furry art, anthro art, monster art, pony artist, order a drawing, commissions for art">
+    <meta name="author" content="Limbo Patriarch">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Limbo Patriarch - Artist's Portfolio">
+    <meta property="og:description" content="Limbo Patriarch's official portfolio - furry, anthro, monster, and pony art creation services. Various styles are available: sketches, full body, stickers.">
+    <meta property="og:image" content="https://batmothertetyana.github.io/Portfolio/images/logo.png">
+    <meta property="og:url" content="https://batmothertetyana.github.io/Portfolio/">
+    <title>Limbo Patriarch - Artist's Portfolio</title>
 
     <!-- Подключение CSS файлов -->
 	
     <link rel="stylesheet" href="styles/body.css">
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-	
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-<canvas id="animated-background"></canvas>
+    <canvas id="animated-background"></canvas>
 
     <!-- Верхняя навигация -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#banner">Beginning</a></li>
-                <li><a href="#news">About me</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#">Beginning</a></li>
+            <li><a href="login.html">Login</a></li>
+			<button id="style-panel-btn">⛭</button>
+        </ul>
+    </nav>
+</header>
+	
+	<div id="style-panel" style="display: none;">
+  <h2>Styles control panel</h2>
+  
+  <label>Background color:</label>
+  <input type="color" id="background-color-picker">
+  <button class="reset-btn" id="reset-bg-color">Cancel</button>
+  
+  <label>Background image:</label>
+  <input type="text" id="background-url" placeholder="Paste the URL of the image">
+  <button id="apply-background-url">Apply image</button>
+  <button class="reset-btn" id="reset-bg-image">Cancel</button>
+  
+  <label>Text color:</label>
+  <input type="color" id="text-color-picker">
+  <button class="reset-btn" id="reset-text-color">Cancel</button>
+  
+  <label>Font size:</label>
+  <input type="range" id="font-size-slider" min="10" max="50" value="16">
+  <button class="reset-btn" id="reset-font-size">Cancel</button>
+  
+  <button id="bold-btn">Bold</button>
+  <button id="italic-btn">Italics</button>
+  
+  <button id="apply-btn">Apply</button>
+</div>
+
+
 
 
  <!-- Боковая навигация -->
+		ㅤ<br>ㅤ<br>
 <aside id="bannerr">
-    <a href="https://t.me/LimboEmpire" target="blank" src="background-image: url('images/image1.webp');">
-		<img src="images/image1.webp" alt="Girl in a jacket" class="i">
-	</a>
-    <a href="https://www.instagram.com/superlimbo_/profilecard/?igsh=MWhuMXhjdTMyZmRyNg==" target="blank" style="background-image: url('images/image2.png');">
-		<img src="images/image2.webp" alt="Girl in a jacket" class="i">
-	</a>
-	<a href="https://www.furaffinity.net/user/superlimbo" target="_blank" style="background-image: url('images/image3.jpg');">
-		<img src="images/image3.png" alt="Girl in a jacket" class="i">
-	</a>
-    <a href="https://www.youtube.com/@SuperLimbo" target="_blank" style="background-image: url('images/image4.jpg');">
-		<img src="images/image4.png" alt="Girl in a jacket" class="i">
-	</a>
-    <a href="https://hipolink.me/limbo" target="_blank" style="background-image: url('images/image5.jpg');">
-		<img src="images/image5.png" alt="Girl in a jacket" class="i">
-	</a>
-	<a href="https://boosty.to/superlimbo" target="_blank" style="background-image: url('images/image5.jpg');">
-		<img src="images/image6.png" alt="Girl in a jacket" class="i">
-	</a>
-</aside>
+        <a href="https://t.me/LimboEmpire" target="_blank"><img src="images/image1.webp" alt="Telegram" class="i"></a>
+        <a href="https://www.instagram.com/superlimbo_/profilecard/" target="_blank"><img src="images/image2.webp" alt="Instagram" class="i"></a>
+        <a href="https://www.furaffinity.net/user/superlimbo" target="_blank"><img src="images/image3.png" alt="FurAffinity" class="i"></a>
+        <a href="https://www.youtube.com/@SuperLimbo" target="_blank"><img src="images/image4.png" alt="YouTube" class="i"></a>
+        <a href="https://hipolink.me/limbo" target="_blank"><img src="images/image5.png" alt="Hipolink" class="i"></a>
+        <a href="https://boosty.to/superlimbo" target="_blank"><img src="images/image6.png" alt="Boosty" class="i"></a>
+    </aside>
 
     <!-- Баннер сайта -->
     <section id="banner">
-        <img src="images/imgg (2).png" alt="Girl in a jacket" width="200" height="200">
+        <img src="images/imgg.png" alt="Logo" width="200" height="200">
         <h1>LIMBO PATRIARCH</h1>
         <blockquote>Welcome to my page!</blockquote>
     </section>
 
     <!-- Основной контент страницы -->
     <main id="news">
+        <article class="expandable">
+            <h2>▽ About me</h2>
+            <div class="content">
+                <p>Hello! My name is Limbo Patriarch. If you have landed on <br>
+                   this page, it means you are interested in my work.</p>
+                <p>You can address me as you wish (he/she), I am genderfluid.</p>
+                <p>I live in Ukraine, but I speak Russian well.</p>
+                <p>At the moment I am 19 years old (14/06/2005).</p>
+                <p>I've been drawing for about 8 years.</p>
+                <div class="image-container">
+                    <img src="images/image0.jpg" alt="About Me">
+                </div>
+            </div>
+        </article>
     <article class="expandable">
-        <h2>▽ About me</h2>
-        <div class="content">
-            <p>Hello! My name is Limbo Patriarch. If you have landed on 
-			<br>this page, it means you are interested in my work.
-			<br><br>
-			You can address me as you wish (he/she), I am genderfluid.
-			<br><br>
-			I live in Ukraine, but I speak Russian well.
-			<br><br>
-			At the moment I am 19 years old (14/06/2005).
-			<br><br>
-			I've been drawing for about 8 years.
-			<br><br>
-			<div class="image-container">
-				<img src="images/image0.jpg" alt="Girl in a jacket">
-			</div>
-			</p>
-        </div>
-    </article>
-    <article class="expandable">
-        <h2>▽ Fursona</h2>
-        <div class="content">
-            <p>Race: Bat<br>
-				Gender: Genderfluid<br>
-				Orientation: Asexual<br>
-				Height: 6.56' (with ears)<br>
-				Weight: 50kg<br>
-				Wingspan: 3.28'<br>
-				Tail length: 4.9'<br>
-			<div>
-				<img src="images/imag2.png" alt="Girl in a jacket" width="60%">
-			</div><br>
-				Palette:<br>
-				Body - #332941<br>
-				Blue pattern -#08adff<br>
-				Orange pattern - #f77213<br><br>
-			<div>
-				<img src="images/imag1.jpg" alt="Girl in a jacket" width="60%" >
-			</div><br>
-				Paws and nose color - #796a8b<br>
-				Yellow eye - #f7b312 (#fb7307}<br>
-				Blue eye - #3878fe {#341cb2}
-				
-			</p>
-        </div>
-    </article>
+            <h2>▽ Fursona</h2>
+            <div class="content">
+                <p>
+                    Race: Bat<br>
+                    Gender: Genderfluid<br>
+                    Orientation: Asexual<br>
+                    Height: 6.56' (with ears)<br>
+                    Weight: 50kg<br>
+                    Wingspan: 3.28'<br>
+                    Tail length: 4.9'
+                </p>
+                <img src="images/imag2.png" alt="Fursona Image" class="center-image">
+                <p>
+                    Palette:<br>
+                    Body - #332941<br>
+                    Blue pattern - #08adff<br>
+                    Orange pattern - #f77213
+                </p>
+                <img src="images/imag1.jpg" alt="Fursona Palette" class="center-image">
+                <p>Paws and nose color - #796a8b</p>
+                <p>Yellow eye - #f7b312</p>
+                <p>Blue eye - #3878fe</p>
+            </div>
+        </article>
     <article class="expandable">
         <h2>▽ Price list</h2>
         <div class="content">
-            <p>Comms are open!<br><br>
-				I draw: Furries, ponies, monsters, anthro, dragons, NSFW. <br>
-				I don’t draw: people, animals, orders that are contrary to the law.<br><br>
+			<p>Comms are open!<br><br>
+			I draw: Furries, ponies, monsters, anthro, dragons, NSFW. <br>
+			I don’t draw: people, animals, orders that are contrary to the law.<br><br>
+			</p>
 				<div class="p">
-				<img src="images/p1.gif" alt="Girl in a jacket" width="60%">
+					<img src="images/p1.gif" alt="Example image" class="center-image">
 				</div><br><br>
-				Sketch:<br>
-				5$ - head<br>
-				10$ - half body<br>
-				15$ - full body<br>
-				Most sketches are drawn with color.<br>
-				Additional charges may apply for backgrounds and complex characters.<br>
-				Free requests for corrections - 3<br><br>
+			<p>Sketch:<br>
+			$5 - head<br>
+			$10 - half body<br>
+			$15 - full body<br>
+			Most sketches are drawn with color.<br>
+			Additional charges may apply for backgrounds and complex characters.<br>
+			Free requests for corrections - 3<br><br>
+			</p>
 				<div class="p">
-				<img src="images/p2.png" alt="Girl in a jacket" width="60%"></div>
-				<br><br>
-				Art: <br>
-				Head - $15<br>
-				Half body - $30<br>
-				Full body - $45<br>
-				Free edits - 5<br>
-				background fill - free<br>
-				complex background - from $10<br>
-				Depending on the complexity of the character, the price may vary.<br><br>
+					<img src="images/p2.png" alt="Sketch example" class="center-image">
+				</div><br><br>
+			<p>Art: <br>
+			Head - $15<br>
+			Half body - $30<br>
+			Full body - $45<br>
+			Free edits - 5<br>
+			Background fill - free<br>
+			Complex background - from $10<br>
+			Depending on the complexity of the character, the price may vary.<br><br>
+			</p>
 				<div class="p">
-				<img src="images/p3.png" alt="Girl in a jacket" width="60%"></div>
-				<br><br>
-				Sticker:<br>
-				from 10$ per piece<br><br>
+					<img src="images/p3.png" alt="Art example" class="center-image">
+				</div><br><br>
+			<p>Sticker:<br>
+			from $10 per piece<br><br>
+			</p>
 				<div class="p">
-				<img src="images/p4.png" alt="Girl in a jacket" width="60%">
+					<img src="images/p4.png" alt="Sticker example" class="center-image">
 				</div>
 				<div class="p">
-				<img src="images/p5.png" alt="Girl in a jacket" width="60%"></div>
-				<br><br>
-				Panel with your character:<br><br>
-
-				From $70 depending on the complexity of your character.
-				 everything is discussed personally.<br><br>
-				 <div class="p">
-				 <img src="images/p6.png" alt="Girl in a jacket" width="60%"></div>
-				 <br><br>
-				 Payment directly to card, PayPal or Boosty
+					<img src="images/p5.png" alt="Another sticker example" class="center-image">
+				</div><br><br>
+			<p>Panel with your character:<br><br>
+			From $70 depending on the complexity of your character.<br>
+			Everything is discussed personally.<br><br>
 			</p>
-        </div>
+				<div class="p">
+					<img src="images/p6.png" alt="Panel example" class="center-image">
+				</div><br><br>
+			<p>Payment directly to card, PayPal, or Boosty.
+			</p>
+		</div>
+
     </article>
 </main>
 
@@ -160,8 +180,8 @@
     <div class="slider">
 	  <button class="prev">&lt;</button> <!-- Кнопка "влево" -->
 	  <div class="slider-wrapper">
-		<img src="images/p7.png" alt="Image 1">
 		<img src="images/p8.png" alt="Image 2">
+		<img src="images/p7.png" alt="Image 1">
 		<img src="images/p9.png" alt="Image 3">
 		<img src="images/p10.jpg" alt="Image 4">
 		<img src="images/p11.jpg" alt="Image 5">
@@ -173,8 +193,11 @@
 	  </div>
 	  <button class="next">&gt;</button> <!-- Кнопка "вправо" -->
 	</div>
-    </section>
-	<script src="script.js"></script>
+	
+	
+<script src="script.js"></script>
+<script src="script2.js"></script>
+	
 	<script>
   const sliderWrapper = document.querySelector('.slider-wrapper');
   const images = document.querySelectorAll('.slider-wrapper img');
@@ -203,10 +226,10 @@
   // Первоначальная настройка
   updateSlider();
 </script>
-
+		ㅤ<br>ㅤ<br>ㅤ<br>ㅤ<br>ㅤ<br>
     <!-- Футер -->
     <footer>
-        <p>© 2024 Limbo Patriarch. All rights reserved.</p>
+        <p>&copy; 2024 Limbo Patriarch. All rights reserved.</p>
     </footer>
 </body>
 </html>
